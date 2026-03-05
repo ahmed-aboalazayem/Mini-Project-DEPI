@@ -92,10 +92,12 @@ body {
     background-color: var(--page-bg);
     background: linear-gradient(135deg, #0a393d,rgb(42, 144, 164),rgb(110, 61, 121) ,#8f0d93);
     background-size: 200% 200%;
-    animation: gradientMove 16s ease-in-out infinite;
+    animation: gradientMoveDarkMode 16s ease-in-out infinite;
 }
 body.light .cards{
     background: linear-gradient(135deg, #0967ff,rgb(71, 151, 255),rgb(255, 116, 253),rgb(249, 178, 255) ,#c03ac5);
+    background-size: 200% 200%;
+    animation: gradientMoveLightMode 16s ease-in-out infinite;
 }
 
 
@@ -109,7 +111,7 @@ body.light .cards{
     border-radius: 20px;
 }
 body.light .cards .profile-card{
-    background: rgba(255, 255, 255, 0.25);
+    background: #ffffff40;
     color: #222;
 }
 
@@ -125,6 +127,12 @@ body.light .cards .profile-card{
     border-radius: 10px;
     font-size: 20px;
     box-shadow: 4px 4px 8px var(--theme-btn-shadow);
+    cursor: pointer;
+    transition: 0.3s;
+}
+body.light .cards .profile-card .profile-header .theme-toggle {
+    background-color: #ffffff90;
+    box-shadow: 4px 4px 8px #6c6c6c90;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -163,7 +171,7 @@ body.light .cards .profile-card .content h1{
     font-size: 20px;
 }
 body.light .cards .profile-card .content .job-title{
-    margin-top: 12px;
+    margin-top: 0;
     color: rgb(92, 91, 91);
     font-size: 20px;
 }
@@ -189,7 +197,7 @@ body.light .cards .profile-card .content .bio{
     margin: 35px 0;
 }
 body.light .cards .profile-card .contact-info{
-    background: rgba(255, 255, 255, 0.566);
+    background: #ffffff90;
     padding: 20px 30px;
     text-align: left;
     border-radius: 25px;
@@ -223,11 +231,8 @@ body.light .cards .profile-card .contact-info{
 .cards .profile-card .social-media a {
     color: var(--social-color);
     background-color: var(--social-bg);
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    padding: 15px 20px;
+    margin: 0 10px;
     border-radius: 12px;
     font-size: 20px;
     cursor: pointer;
@@ -236,7 +241,7 @@ body.light .cards .profile-card .contact-info{
 body.light .cards .profile-card .social-media a{
     color: #6277fd;
     background: rgba(255, 255, 255, 0.566);
-    padding: 15px;
+    padding: 15px 20px;
     border-radius: 12px;
     margin: 0 10px;
     font-size: 20px;
@@ -322,7 +327,7 @@ body.light .cards .profile-card .social-media a:hover{
 }
 
     /* animations */
-@keyframes gradientMove {
+@keyframes gradientMoveDarkMode {
 
     0%{
         background-position: 60% 5%;
@@ -335,5 +340,18 @@ body.light .cards .profile-card .social-media a:hover{
     100%{
         background-position: 60% 5%;
     }
+}
+@keyframes gradientMoveLightMode {
 
+    0%{
+        background-position: 60% 5%;
+    }
+
+    50%{
+        background-position: 80% 60%;
+    }
+
+    100%{
+        background-position: 60% 5%;
+    }
 }
