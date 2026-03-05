@@ -13,7 +13,8 @@
     --theme-btn-shadow: #081118;
 
     /* avatar */
-    --avatar-border: #6e5586c1;
+    --avatar-outline: #b896d8c1;
+    --avatar-border:#f7f2fcc1;
 
     /* text */
     --text-muted: rgb(191, 191, 191);
@@ -127,7 +128,8 @@ body {
 }
 
 .cards .profile-card .profile-header img {
-    border: 8px solid var(--avatar-border);
+    outline: 8px solid var(--avatar-outline);
+    border: 4px solid var(--avatar-border);
     border-radius: 50%;
 }
 
