@@ -1,5 +1,6 @@
 :root {
-    /* Dark Mood Variables */
+    /* Dark Mode Variables */
+
     /* page */
     --page-bg: #124154;
 
@@ -27,10 +28,10 @@
 
     /* overlay */
     --overlay-bg: rgba(0, 0, 0, 0.6);
-    /* End Dark Mood Variables */
 }
 
 /* Global Style */
+
 *,
 *::before,
 *::after {
@@ -49,6 +50,7 @@ body {
 }
 
 /* Overlay Style */
+
 .image-card {
     position: relative;
     width: 300px;
@@ -80,7 +82,8 @@ body {
     transform: translateY(0);
 }
 
-/* background color */
+/* Cards */
+
 .cards {
     display: flex;
     justify-content: center;
@@ -92,13 +95,14 @@ body {
     color: var(--card-text);
     max-width: 600px;
     text-align: center;
-    padding: 30px 40px;
+    padding: 50px 50px 30px;
     position: relative;
     background-color: var(--card-bg);
     border-radius: 20px;
 }
 
-/* Profile image and button theme */
+/* Profile image and theme button */
+
 .cards .profile-card .profile-header .theme-toggle {
     position: absolute;
     top: 20px;
@@ -111,6 +115,7 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
+
 .theme-toggle:hover {
     transform: rotate(20deg) scale(1.1);
 }
@@ -121,6 +126,7 @@ body {
 }
 
 /* Profile info */
+
 .cards .profile-card .content h1 {
     font-weight: 900;
     margin-bottom: 0;
@@ -137,6 +143,8 @@ body {
     margin-top: 30px;
 }
 
+/* Contact Info */
+
 .cards .profile-card .contact-info {
     background-color: var(--contact-bg);
     padding: 20px 30px;
@@ -150,6 +158,7 @@ body {
     transition: 0.3s;
     cursor: default;
 }
+
 .cards .profile-card .contact-info .contact-row:hover {
     transform: translateX(5px);
 }
@@ -159,13 +168,15 @@ body {
     color: var(--social-color);
 }
 
-/* button of social media */
+/* Social Media */
+
 .cards .profile-card .social-media {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
 .cards .profile-card .social-media a {
     color: var(--social-color);
     background-color: var(--social-bg);
@@ -187,6 +198,8 @@ body {
     transform: translateY(-5px) scale(1.1);
 }
 
+/* Featured Work */
+
 .cards .profile-card .feature-work {
     text-align: left;
     margin-bottom: 25px;
@@ -202,13 +215,13 @@ body {
     cursor: pointer;
 }
 
-/* Make A Tooltip */
+/* Tooltip */
+
 .social-media a {
     position: relative;
     text-decoration: none;
 }
 
-/* tooltip */
 .social-media a::after {
     content: attr(data-tooltip);
     position: absolute;
@@ -229,7 +242,6 @@ body {
     transition: 0.3s;
 }
 
-/* arrow */
 .social-media a::before {
     content: "";
     position: absolute;
