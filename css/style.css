@@ -231,7 +231,7 @@ body.light .cards .profile-card .contact-info{
 .cards .profile-card .social-media a {
     color: var(--social-color);
     background-color: var(--social-bg);
-    padding: 15px 20px;
+    padding: 13px 18px;
     margin: 0 10px;
     border-radius: 12px;
     font-size: 20px;
@@ -241,7 +241,7 @@ body.light .cards .profile-card .contact-info{
 body.light .cards .profile-card .social-media a{
     color: #6277fd;
     background: rgba(255, 255, 255, 0.566);
-    padding: 15px 20px;
+    padding: 13px 18px;
     border-radius: 12px;
     margin: 0 10px;
     font-size: 20px;
@@ -258,7 +258,7 @@ body.light .cards .profile-card .social-media a{
 }
 body.light .cards .profile-card .social-media a:hover{
     box-shadow: 0 0 12px rgba(100,100,255,0.4), 0 0 8px rgba(100,100,255,0.2);
-    transform: scale(1.2);
+    transform: translateY(-5px) scale(1.1);
 }
 
 
