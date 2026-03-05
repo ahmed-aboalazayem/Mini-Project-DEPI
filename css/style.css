@@ -13,8 +13,8 @@
     --theme-btn-shadow: #081118;
 
     /* avatar */
-    --avatar-outline: #b896d8c1;
-    --avatar-border:#f7f2fcc1;
+    --avatar-outline: #bf7aff;
+    --avatar-border:#e5c8ff;
 
     /* text */
     --text-muted: rgb(191, 191, 191);
@@ -90,10 +90,7 @@ body {
     justify-content: center;
     padding: 25px;
     background-color: var(--page-bg);
-    background:
-        radial-gradient(circle at 10% 20%, #1f6a85 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, #0b2c37 0%, transparent 40%),
-        linear-gradient(135deg, #124154, #0c2631);
+    background: linear-gradient(135deg, #0a393d,rgb(42, 144, 164),rgb(110, 61, 121) ,#8f0d93);
     background-size: 200% 200%;
     animation: gradientMove 16s ease-in-out infinite;
 }
@@ -193,7 +190,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 12px;
     font-size: 20px;
     cursor: pointer;
     transition: 0.4s;
