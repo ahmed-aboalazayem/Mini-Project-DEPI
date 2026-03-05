@@ -13,7 +13,8 @@
     --theme-btn-shadow: #081118;
 
     /* avatar */
-    --avatar-border: #6e5586c1;
+    --avatar-outline: #bf7aff;
+    --avatar-border:#e5c8ff;
 
     /* text */
     --text-muted: rgb(191, 191, 191);
@@ -89,6 +90,9 @@ body {
     justify-content: center;
     padding: 25px;
     background-color: var(--page-bg);
+    background: linear-gradient(135deg, #0a393d,rgb(42, 144, 164),rgb(110, 61, 121) ,#8f0d93);
+    background-size: 200% 200%;
+    animation: gradientMove 16s ease-in-out infinite;
 }
 
 .cards .profile-card {
@@ -121,7 +125,8 @@ body {
 }
 
 .cards .profile-card .profile-header img {
-    border: 8px solid var(--avatar-border);
+    outline: 8px solid var(--avatar-outline);
+    border: 4px solid var(--avatar-border);
     border-radius: 50%;
 }
 
@@ -185,7 +190,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 12px;
     font-size: 20px;
     cursor: pointer;
     transition: 0.4s;
@@ -260,4 +265,21 @@ body {
 .social-media a:hover::after,
 .social-media a:hover::before {
     opacity: 1;
+}
+
+    /* animations */
+@keyframes gradientMove {
+
+    0%{
+        background-position: 60% 5%;
+    }
+
+    50%{
+        background-position: 80% 60%;
+    }
+
+    100%{
+        background-position: 60% 5%;
+    }
+
 }
