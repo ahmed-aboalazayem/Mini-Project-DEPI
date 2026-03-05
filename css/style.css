@@ -52,13 +52,13 @@ body {
     display: flex;
     justify-content: center;
     padding: 25px;
-    background-color: #124154;
+    background-color: #124154 ;
 }
 .cards .profile-card{
     color: white;
     max-width: 600px;
     text-align: center;
-    padding: 30px 40px;
+    padding: 50px 50px 30px;
     position: relative;
     background-color: #192b38;
     border-radius: 20px;
@@ -67,17 +67,24 @@ body {
     /* Profile image and button theme */
 .cards .profile-card .profile-header span{
     position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #09131b;
+    top: 25px;
+    right: 25px;
+    background-color: #0f1c28;
     padding: 12px;
     border-radius: 8px;
-    box-shadow: 4px 4px 8px #081118;
+    box-shadow: 4px 4px 8px #010203;
     cursor: pointer;
+        transition: all 0.4s ease;
+}
+.cards .profile-card .profile-header span:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 8px #050a10;
 }
 .cards .profile-card .profile-header img{
-    border: 8px solid #6e5586c1;
+    outline: 8px solid #bf7aff;
+    border: 4px solid #e5c8ff;
     border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgb(226, 9, 255);
 }
 
     /* Profile info */
@@ -95,7 +102,7 @@ body {
     margin-top: 30px;
 }
 .cards .profile-card .contact-info{
-    background-color: #09131b;
+    background-color: #0f1c28;
     padding: 20px 30px;
     text-align: left;
     border-radius: 25px;
@@ -103,6 +110,10 @@ body {
 }
 .cards .profile-card .contact-info .contact-row{
     margin: 15px 0;
+    transition: all 0.4s ease;
+}
+.cards .profile-card .contact-info .contact-row:hover{
+    transform: scale(1.01);
 }
 .cards .profile-card .contact-info .contact-row i{
     margin-right: 10px;
@@ -112,18 +123,19 @@ body {
 .cards .profile-card .social-media{
     margin-bottom: 50px;
 }
-.cards .profile-card .social-media a{
+.cards .profile-card .social-media a i{
     color: #6C78A4;
-    background-color: #081118;
+    background-color: #0f1c28;
     padding: 15px;
     border-radius: 12px;
     margin: 0 10px;
     font-size: 20px;
     cursor: pointer;
-        transition: 0.4s;
+        transition: all 0.4s ease;
 }
-.cards .profile-card .social-media a:hover{
+.cards .profile-card .social-media a:hover i{
     box-shadow: 1px 1px 8px #6C78A4, -1px -1px 8px #6C78A4 ;
+    transform: scale(1.2);
 }
 
 .cards .profile-card .feature-work{
