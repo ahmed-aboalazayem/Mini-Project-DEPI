@@ -46,3 +46,95 @@ body {
 .image-card:hover .overlay {
     transform: translateY(0);
 }
+
+    /* background color */
+.cards{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: #124154;
+}
+.cards .profile-card{
+    color: white;
+    max-width: 600px;
+    text-align: center;
+    padding: 30px 40px;
+    position: relative;
+    background-color: #192b38;
+    border-radius: 20px;
+}
+
+    /* Profile image and button theme */
+.cards .profile-card .profile-header span{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #09131b;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px #081118;
+    cursor: pointer;
+}
+.cards .profile-card .profile-header img{
+    border: 8px solid #6e5586c1;
+    border-radius: 50%;
+}
+
+    /* Profile info */
+.cards .profile-card .content h1{
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.cards .profile-card .content .job-title{
+    margin-top: 12px;
+    color: rgb(191, 191, 191);
+    font-size: 20px;
+}
+.cards .profile-card .content .bio{
+    color: rgb(191, 191, 191);
+    margin-top: 30px;
+}
+.cards .profile-card .contact-info{
+    background-color: #09131b;
+    padding: 20px 30px;
+    text-align: left;
+    border-radius: 25px;
+    margin: 35px 0;
+}
+.cards .profile-card .contact-info .contact-row{
+    margin: 15px 0;
+}
+.cards .profile-card .contact-info .contact-row i{
+    margin-right: 10px;
+}
+
+    /* button of social media */
+.cards .profile-card .social-media{
+    margin-bottom: 50px;
+}
+.cards .profile-card .social-media a{
+    color: #6C78A4;
+    background-color: #081118;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+        transition: 0.4s;
+}
+.cards .profile-card .social-media a:hover{
+    box-shadow: 1px 1px 8px #6C78A4, -1px -1px 8px #6C78A4 ;
+}
+
+.cards .profile-card .feature-work{
+    text-align: left;
+    margin-bottom: 25px;
+}
+.cards .profile-card .feature-work .images{
+    display: flex;
+    gap: 20px;
+}
+.cards .profile-card .feature-work .images .image-card{
+    border-radius: 12px;
+    cursor: pointer;
+}
