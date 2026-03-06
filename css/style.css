@@ -9,8 +9,10 @@
     --card-text: #ffffff;
 
     /* header button */
-    --theme-btn-bg: #09131b;
-    --theme-btn-shadow: #081118;
+    --theme-btn-bg-dark: #09131b;
+    --theme-btn-shadow-dark: #081118;
+    --theme-btn-bg-light: #ffffff90;
+    --theme-btn-shadow-light: #adadad90;
 
     /* avatar */
     --avatar-outline: #bf7aff;
@@ -20,7 +22,8 @@
     --text-muted: rgb(191, 191, 191);
 
     /* contact box */
-    --contact-bg: #09131b;
+    --contact-bg-dark: #09131b;
+    --contact-bg-light: #ffffff90;
 
     /* social buttons */
     --social-bg: #081118;
@@ -131,11 +134,17 @@ body.light .cards .profile-card {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--theme-btn-bg);
+    background-color: var(--theme-btn-bg-dark);
     padding: 12px;
     border-radius: 10px;
     font-size: 20px;
-    box-shadow: 4px 4px 8px var(--theme-btn-shadow);
+    box-shadow: 4px 4px 8px var(--theme-btn-shadow-dark);
+    cursor: pointer;
+    transition: 0.3s;
+}
+body.light .cards .profile-card .profile-header .theme-toggle {
+    background-color: var(--theme-btn-bg-light);
+    box-shadow: 4px 4px 8px var(--theme-btn-shadow-light);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -189,14 +198,14 @@ body.light .cards .profile-card .content .bio {
 /* Contact Info */
 
 .cards .profile-card .contact-info {
-    background-color: var(--contact-bg);
+    background-color: var(--contact-bg-dark);
     padding: 20px 30px;
     text-align: left;
     border-radius: 25px;
     margin: 35px 0;
 }
 body.light .cards .profile-card .contact-info {
-    background: rgba(255, 255, 255, 0.566);
+    background-color: var(--contact-bg-light);
     padding: 20px 30px;
     text-align: left;
     border-radius: 25px;
